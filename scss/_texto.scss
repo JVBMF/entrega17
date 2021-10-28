@@ -1,0 +1,36 @@
+@mixin text($height) {
+    height: $height;
+    width: 1025px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+    font-size: 20px;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.texto {
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    .texto_subtitulo {
+        margin-bottom: 30px;
+        padding: 10px;
+        word-spacing: 1px;
+        font-size: 25px;
+    }
+    .texto_parrafo_clasico {
+        @include text(500px);
+    }
+    .texto_parrafo_filosofia {
+        @include text(900px);
+    }
+    .texto_parrafo_novela {
+        @include text(400px);
+    }
+    .texto_parrafo_poesia {
+        @include text(350px);
+    }
+}
