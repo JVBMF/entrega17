@@ -1,10 +1,11 @@
 @mixin text($height) {
     height: $height;
-    width: 1025px;
+    width: 80vw;
     margin: 50px auto;
+    padding: 1.5rem;
     padding-top: 75px;
     background: #ccc;
-    text-align: center;
+    text-align: justify;
     color: #FFF;
     font-size: 3em;
     font-size: 20px;
@@ -22,15 +23,15 @@
         font-size: 25px;
     }
     .texto_parrafo_clasico {
-        @include text(500px);
+        @include text(55vh);
     }
     .texto_parrafo_filosofia {
-        @include text(900px);
+        @include text(80vh);
     }
     .texto_parrafo_novela {
-        @include text(400px);
+        @include text(55vh);
     }
     .texto_parrafo_poesia {
-        @include text(350px);
+        @include text(55vh);
     }
 }
